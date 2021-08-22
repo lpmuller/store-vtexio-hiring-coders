@@ -1,0 +1,232 @@
+{
+  "store.home": { 
+    "blocks": [      
+      "tab-layout#home"          
+    ]
+  },    
+  "slider-layout#home": {
+    "children": [
+      "image#kit1",
+      "image#kit2"
+    ],
+    "props": {
+      "showNavigationArrows": "always",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "mobile": 1
+      },
+      "autoplay": {
+        "timeout": 7000,
+        "stopOnHover": true
+      }
+    }
+  },
+  "image#kit1": {
+    "props": {      
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T160531Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=f9ce528cc7b0233cde3e4345a09972481459ff450ac720e4c8afb636d90519af",
+      "blockClass": "bannerImage"
+    }
+  },
+  "image#kit2": {
+    "props": {
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T160248Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=2c64583261d05831c2e344c7b4235082d58362208ed1b0c203e3b59b77905a06",
+      "blockClass": "bannerImage"
+    }
+  },
+  "tab-layout#home": {
+    "children": [
+      "tab-list#home",
+      "tab-content#home"
+    ],
+    "props": {
+      "blockClass": "home",
+      "defaultActiveTabId": "category1"
+    }
+  },
+  "tab-list#home": {
+    "children": [
+      "tab-list.item#category1",
+      "tab-list.item#category2",
+      "tab-list.item#category3",
+      "tab-list.item#category4",
+      "tab-list.item#category5",
+      "tab-list.item#category6",
+      "tab-list.item#category7"
+    ]
+  },
+  "tab-list.item#category1": {
+    "props": {
+      "tabId": "category1",
+      "label": "PROMOÇÃO",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#category2": {
+    "props": {
+      "tabId": "category2",
+      "label": "SIGNOS"
+    }
+  },
+  "tab-list.item#category3": {
+    "props": {
+      "tabId": "category3",
+      "label": "CORINTHIANS"
+    }
+  },
+  "tab-list.item#category4": {
+    "props": {
+      "tabId": "category4",
+      "label": "PALMEIRAS"
+    }
+  },
+  "tab-list.item#category5": {
+    "props": {
+      "tabId": "category5",
+      "label": "DIVERTIDOS"
+    }
+  },
+  "tab-list.item#category6": {
+    "props": {
+      "tabId": "category6",
+      "label": "7 MARAVILHAS"
+    }
+  },
+  "tab-list.item#category7": {
+    "props": {
+      "tabId": "category7",
+      "label": "GUERREIROS"
+    }
+  },
+  "tab-content#home": {
+    "children": [
+      "tab-content.item#category1",
+      "tab-content.item#category2",
+      "tab-content.item#category3",
+      "tab-content.item#category4",
+      "tab-content.item#category5",
+      "tab-content.item#category6",
+      "tab-content.item#category7"
+    ]
+  },
+  "tab-content.item#category1": {
+    "children": [    
+      "slider-layout#home",
+      "list-context.product-list#category1"      
+    ],
+    "props": {
+      "tabId":"category1"
+    }
+  },
+  "tab-content.item#category2": {
+    "children": [    
+      "slider-layout#home",
+      "list-context.product-list#category2"
+    ],
+    "props": {
+      "tabId":"category2"
+    }
+  },
+  "tab-content.item#category3": {
+    "children": [    
+      "slider-layout#home",
+      "list-context.product-list#category3"
+    ],
+    "props": {
+      "tabId":"category3"
+    }
+  },
+  "tab-content.item#category4": {
+    "children": [    
+      "slider-layout#home",
+      "list-context.product-list#category4"
+    ],
+    "props": {
+      "tabId":"category4"
+    }
+  },
+  "tab-content.item#category5": {
+    "children": [    
+      "slider-layout#home",
+      "list-context.product-list#category5"
+    ],
+    "props": {
+      "tabId":"category5"
+    }
+  },
+  "tab-content.item#category6": {
+    "children": [    
+      "slider-layout#home",
+      "list-context.product-list#category6"
+    ],
+    "props": {
+      "tabId":"category6"
+    }
+  },
+  "tab-content.item#category7": {
+    "children": [    
+      "slider-layout#home",
+      "list-context.product-list#category7"
+    ],
+    "props": {
+      "tabId":"category7"
+    }
+  },
+  "list-context.product-list#category1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout"],
+    "props": {
+      "category": "20/24",
+      "maxItems": 8
+    }  
+  },
+  "list-context.product-list#category2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout"],
+    "props": {
+      "category": "20/21",
+      "maxItems": 8
+    }  
+  },
+  "list-context.product-list#category3": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout"],
+    "props": {
+      "category": "20/22",
+      "maxItems": 8
+    }  
+  },
+  "list-context.product-list#category4": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout"],
+    "props": {
+      "category": "20/23",
+      "maxItems": 8
+    }  
+  },
+  "list-context.product-list#category5": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout"],
+    "props": {
+      "category": "20/25",
+      "maxItems": 8
+    }  
+  },
+  "list-context.product-list#category6": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout"],
+    "props": {
+      "category": "20/26",
+      "maxItems": 8
+    }  
+  },
+  "list-context.product-list#category7": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout"],
+    "props": {
+      "category": "20/27",
+      "maxItems": 8
+    }  
+  }
+
+}
